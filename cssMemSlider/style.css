@@ -98,9 +98,13 @@ body {
 }
 
 .slider__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   max-width: 1640px;
   margin: 0 auto;
   margin-top: 50px;
+  height: 1300px;
 }
 
 .slider__slides {
@@ -111,11 +115,39 @@ body {
 .slides__slide {
   position: absolute;
   width: 100%;
-  height: 850px;
+  height: 1038px;
 }
 
 .slides__slide img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.input-img {
+  display: none;
+}
+
+.slider__control {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+}
+
+.dotter {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
 }
