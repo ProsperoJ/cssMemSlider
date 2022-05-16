@@ -188,14 +188,6 @@ body {
   transition: background-color 0.4s ease 0s;
 }
 
-.dotter span:hover {
-  background-color: #fff;
-}
-
-.dotter span:active {
-  background-color: rgb(129, 125, 125);
-}
-
 .slides__slide {
   z-index: -1;
 }
@@ -273,11 +265,26 @@ body {
   transition: border-color 0.4s ease 0s;
 }
 
-#slide-1:checked ~ .slider__control .control__navigation .dott1 span:hover,
-#slide-2:checked ~ .slider__control .control__navigation .dott2 span:hover,
-#slide-3:checked ~ .slider__control .control__navigation .dott3 span:hover,
-#slide-4:checked ~ .slider__control .control__navigation .dott4 span:hover {
+#slide-1:checked ~ .slider__control .control__navigation .dott1:hover span,
+#slide-2:checked ~ .slider__control .control__navigation .dott2:hover span,
+#slide-3:checked ~ .slider__control .control__navigation .dott3:hover span,
+#slide-4:checked ~ .slider__control .control__navigation .dott4:hover span {
   border-color: #fff;
+}
+
+#slide-1:checked ~ .slider__control .control__navigation .dott1:active span,
+#slide-2:checked ~ .slider__control .control__navigation .dott2:active span,
+#slide-3:checked ~ .slider__control .control__navigation .dott3:active span,
+#slide-4:checked ~ .slider__control .control__navigation .dott4:active span {
+  border-color: rgb(129, 125, 125);
+}
+
+.dotter:hover span {
+  background-color: #fff;
+}
+
+.dotter:active span {
+  background-color: rgb(129, 125, 125);
 }
 
 @media screen and (max-width: 48rem) {
@@ -289,7 +296,7 @@ body {
     justify-content: center;
     flex-direction: column-reverse;
   }
-  
+
   .text {
     max-width: 100%;
   }
