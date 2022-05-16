@@ -168,6 +168,16 @@ body {
 #slide-3:checked ~ .slider__slides .slide_three,
 #slide-4:checked ~ .slider__slides .slide_four {
   z-index: 9;
+  animation: scroll 1s ease-in-out;
+}
+
+@keyframes scroll{
+	0%  {
+    opacity:.1;
+  }
+	100% {
+    opacity:1;
+  }
 }
 
 #slide-1:checked ~ .slider__control .control__navigation .dott1,
