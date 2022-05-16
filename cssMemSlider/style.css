@@ -143,6 +143,20 @@ body {
   bottom: 0;
 }
 
+.control__text {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.text {
+  position: absolute;
+  opacity: 0;
+}
+
+.text span {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+}
+
 .dotter {
   width: 25px;
   height: 25px;
@@ -169,6 +183,53 @@ body {
 #slide-4:checked ~ .slider__slides .slide_four {
   z-index: 9;
   animation: scroll 1s ease-in-out;
+}
+
+#slide-1:checked ~ .slider__control .control__text .text-1,
+#slide-2:checked ~ .slider__control .control__text .text-2,
+#slide-3:checked ~ .slider__control .control__text .text-3,
+#slide-4:checked ~ .slider__control .control__text .text-4 {
+  opacity: 1;
+  animation: bounce-top 2s 1 both;
+}
+
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
 }
 
 @keyframes scroll{
