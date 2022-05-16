@@ -12,47 +12,56 @@
       <header class="header"></header>
       <main class="main">
         <div class="slider">
-          <div class="slider__container _container">
+          <input
+            type="radio"
+            name="slide"
+            class="input-img"
+            id="slide-1"
+            checked
+          />
+          <input type="radio" name="slide" class="input-img" id="slide-2" />
+          <input type="radio" name="slide" class="input-img" id="slide-3" />
+          <input type="radio" name="slide" class="input-img" id="slide-4" />
 
-            <input
-              type="radio"
-              name="slide"
-              class="input-img"
-              id="slide-1"
-              checked
-            />
-            <input type="radio" name="slide" class="input-img" id="slide-2" />
-            <input type="radio" name="slide" class="input-img" id="slide-3" />
-            <input type="radio" name="slide" class="input-img" id="slide-4" />
-
-            <div class="slider__slides slides">
-              <div class="slides__slide slide_one" id="slide_one">
-                <img src="./assets/images/1.jpg" alt="Image" />
-              </div>
-              <div class="slides__slide slide_two" id="slide_two">
-                <img src="./assets/images/2.jpg" alt="Image" />
-              </div>
-              <div class="slides__slide slide_three" id="slide_three">
-                <img src="./assets/images/3.jpg" alt="Image" />
-              </div>
-              <div class="slides__slide slide_four" id="slide_four">
-                <img src="./assets/images/4.jpg" alt="Image" />
-              </div>
+          <div class="slider__slides slides">
+            <div class="slides__slide slide_one" id="slide_one">
+              <img src="./assets/images/1.jpg" alt="Image" />
             </div>
+            <div class="slides__slide slide_two" id="slide_two">
+              <img src="./assets/images/2.jpg" alt="Image" />
+            </div>
+            <div class="slides__slide slide_three" id="slide_three">
+              <img src="./assets/images/3.jpg" alt="Image" />
+            </div>
+            <div class="slides__slide slide_four" id="slide_four">
+              <img src="./assets/images/4.jpg" alt="Image" />
+            </div>
+          </div>
 
-            <div class="slider__control control">
-              <div class="control__text">
-                <p class="text text-1"><span>Here is a mentor "RS School" who will be surprised at the interview</span></p>
-                <p class="text text-2"><span>In finding bugs in the code, any help will come in handy</span></p>
-                <p class="text text-3"><span>When I finish my studies. Not earlier!</span></p>
-                <p class="text text-4"><span>Well, now is the time...</span></p>
-              </div>
-              <div class="control__navigation">
-                <label for="slide-1" class="dotter dott1"><span></span></label>
-                <label for="slide-2" class="dotter dott2"><span></span></label>
-                <label for="slide-3" class="dotter dott3"><span></span></label>
-                <label for="slide-4" class="dotter dott4"><span></span></label>
-              </div>
+          <div class="slider__control control">
+            <div class="control__text">
+              <p class="text text-1">
+                <span
+                  >Here is a mentor "RS School" who will be surprised at the
+                  interview</span
+                >
+              </p>
+              <p class="text text-2">
+                <span
+                  >In finding bugs in the code, any help will come in
+                  handy</span
+                >
+              </p>
+              <p class="text text-3">
+                <span>When I finish my studies. Not earlier!</span>
+              </p>
+              <p class="text text-4"><span>Well, now is the time...</span></p>
+            </div>
+            <div class="control__navigation">
+              <label for="slide-1" class="dotter dott1"><span></span></label>
+              <label for="slide-2" class="dotter dott2"><span></span></label>
+              <label for="slide-3" class="dotter dott3"><span></span></label>
+              <label for="slide-4" class="dotter dott4"><span></span></label>
             </div>
           </div>
         </div>
