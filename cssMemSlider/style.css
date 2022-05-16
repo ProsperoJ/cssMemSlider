@@ -113,12 +113,12 @@ body {
   flex-direction: column;
   gap: 1rem;
   border-radius: 0.5rem;
-  width: clamp(30rem , calc(474 / 1280 * 100vw), 42rem);
+  width: clamp(60rem , calc(474 / 1280 * 100vw), 82rem);
 }
 
 .slider__slides {
   display: flex;
-  height: 35rem;
+  height: 55rem;
   overflow: hidden;
   border-radius: 0.5rem;
   width: 100%;
@@ -128,8 +128,8 @@ body {
 
 .slides__slide {
   position: absolute;
-  width: clamp(30rem , calc(474 / 1280 * 100vw), 40rem);
-  height: 35rem;
+  width: clamp(60rem , calc(474 / 1280 * 100vw), 80rem);
+  height: 55rem;
 }
 
 .slides__slide img {
@@ -146,7 +146,8 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  width: clamp(30rem , calc(474 / 1280 * 100vw), 40rem);
+  width: clamp(60rem , calc(474 / 1280 * 100vw), 80rem);
+  font-size: 2rem;
 }
 
 .control__navigation {
@@ -289,12 +290,26 @@ body {
 
 @media screen and (max-width: 48rem) {
   .slider {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     gap: 4.5rem;
+    border-radius: 0.5rem;
+    width: clamp(30rem , calc(474 / 1280 * 100vw), 52rem);
+  }
+
+  .slides__slide {
+    position: absolute;
+    width: clamp(30rem , calc(474 / 1280 * 100vw), 50rem);
+    height: 55rem;
   }
 
   .slider__control {
     justify-content: center;
     flex-direction: column-reverse;
+    gap: 1rem;
+    width: clamp(30rem , calc(474 / 1280 * 100vw), 50rem);
+    font-size: 1.5rem;
   }
 
   .text {
